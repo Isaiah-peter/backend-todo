@@ -12,7 +12,7 @@ var RegisterTodo = func(router *mux.Router) {
 	router.HandleFunc("/todo/", controllers.CreateTodo).Methods("POST")
 	router.HandleFunc("/todo/", controllers.GetTodo).Methods("GET")
 	router.HandleFunc("/todo-completed", controllers.CompletedTodo).Methods("GET")
-	router.HandleFunc("/todo/{todoid}", controllers.GetTodoById).Methods("GET")
+	router.HandleFunc("/odo/{todoid}", controllers.GetTodoById).Methods("GET")
 	router.HandleFunc("/todo/{todoid}", controllers.UpdateTodo).Methods("PUT")
 	router.HandleFunc("/todo/{todoid}", controllers.DeleteTodo).Methods("DELETE")
 
